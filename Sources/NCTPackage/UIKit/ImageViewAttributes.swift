@@ -12,7 +12,7 @@ public protocol ImageViewAttributes {
     func contentMode(_ mode: UIView.ContentMode) -> Self
 }
 
-extension ImageViewAttributes where Self: UIImageView {
+public extension ImageViewAttributes where Self: UIImageView {
     @discardableResult
     func image(_ image: UIImage, tintColor color: UIColor? = nil) -> Self {
         if let color = color {

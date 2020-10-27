@@ -16,7 +16,7 @@ public protocol LabelAttributes {
     func attributedText(_ attributedText: NSAttributedString?) -> Self
 }
 
-extension LabelAttributes where Self: UILabel {
+public extension LabelAttributes where Self: UILabel {
     @discardableResult
     func text(_ text: String?) -> Self {
         self.text = text

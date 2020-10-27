@@ -15,7 +15,7 @@ public protocol StackViewAttributes {
     func background(_ view: UIView) -> Self
 }
 
-extension StackViewAttributes where Self: UIStackView {
+public extension StackViewAttributes where Self: UIStackView {
     @discardableResult
     func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
         self.axis = axis

@@ -10,7 +10,7 @@ import PromiseKit
 import Alamofire
 
 public struct API {
-    static func call<T: Decodable>(router: URLRequestConvertible, resultType: T) -> Promise<T> {
+    public static func call<T: Decodable>(router: URLRequestConvertible, resultType: T) -> Promise<T> {
         return Promise { promise in
             AF.request(router).responseDecodable(of: T.self, queue: .global()) { (dataResponse) in
                 switch dataResponse.result {

@@ -14,7 +14,7 @@ public protocol ButtonAttributes {
     func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> Self
 }
 
-extension ButtonAttributes where Self: UIButton {
+public extension ButtonAttributes where Self: UIButton {
     @discardableResult
     func title(_ title: String?, for state: UIControl.State) -> Self {
         self.setTitle(title, for: state)

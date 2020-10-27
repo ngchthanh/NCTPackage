@@ -19,7 +19,7 @@ public protocol TextFieldAttributes {
     func addRightView(_ view: UIView?, mode: UITextField.ViewMode) -> Self
 }
 
-extension TextFieldAttributes where Self: UITextField {
+public extension TextFieldAttributes where Self: UITextField {
     @discardableResult
     func text(_ text: String) -> Self {
         self.text = text
