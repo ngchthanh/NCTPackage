@@ -32,5 +32,6 @@ let package = Package(
         .testTarget(
             name: "NCTPackageTests",
             dependencies: ["NCTPackage"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
