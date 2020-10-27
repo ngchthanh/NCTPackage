@@ -27,5 +27,6 @@ extension ImageViewAttributes where Self: UIImageView {
     @discardableResult
     func contentMode(_ mode: UIView.ContentMode) -> Self {
         self.contentMode = mode
+        return self
     }
 }

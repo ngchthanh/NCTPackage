@@ -25,7 +25,6 @@ extension StackViewAttributes where Self: UIStackView {
     @discardableResult
     func distribution(_ distribution: UIStackView.Distribution) -> Self {
         self.distribution = distribution
-        self.alignment
         return self
     }
     
